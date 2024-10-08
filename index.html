@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clocks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>World Clocks</h1>
+
+    <div class="search-container">
+        <label for="city">Search by City or Timezone:</label>
+        <input type="text" id="city" placeholder="e.g., Tokyo, GMT+9">
+        <button onclick="displayClock()">Search</button>
+    </div>
+
+    <div class="options">
+        <label for="clockType">Choose Clock Type:</label>
+        <select id="clockType">
+            <option value="digital">Digital</option>
+            <option value="analog">Analog</option>
+        </select>
+    </div>
+
+    <div id="clockContainer"></div>
+
+    <div class="button-container">
+        <a href="about.html" class="btn">About</a>
+        <a href="aboutDEV.html" class="btn" target="_blank">Developer Info</a>
+    </div>
+
+    <footer>
+        <p>Search for city names or time zones (e.g., GMT+7 for Bangkok).</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
